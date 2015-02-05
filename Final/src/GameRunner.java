@@ -7,5 +7,7 @@ public class GameRunner
 		Board.displayBoard();
 		PlayerTurn.greetUser();
 		PlayerTurn.askForTurn();
+		PlayerTurn.assignTurn();
+		Board.displayBoard();
 		}
 	}

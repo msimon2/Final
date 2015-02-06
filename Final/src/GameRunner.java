@@ -7,7 +7,10 @@ public class GameRunner
 		Board.displayBoard();
 		PlayerTurn.greetUser();
 		PlayerTurn.askForTurn();
-		PlayerTurn.assignTurn();
-		Board.displayBoard();
+		while (PlayerTurn.isWon)
+			{
+			PlayerTurn.assignTurn();
+			Board.displayBoard();
+			}
 		}
 	}

@@ -34,10 +34,36 @@ public class ScoreBoard
 		board.add(new ScoreBoard("Andy", 106));
 		board.add(new ScoreBoard("Sarah", 82)); 
 		board.add(new ScoreBoard("Kate", 127));
+		board.add(new ScoreBoard(PlayerTurn.name, GameRunner.score));
 		for (int i=0; i<board.size(); i++)
 			{
 			System.out.println(board.get(i).getNames() + " has a score of " + board.get(i).getScores());
 			}
-		board.add(new ScoreBoard(PlayerTurn.name, GameRunner.score));
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

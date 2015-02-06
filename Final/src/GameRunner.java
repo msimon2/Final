@@ -6,7 +6,6 @@ public class GameRunner
 		{
 		Board.makeBoard();
 		Board.displayBoard();
-		ScoreBoard.addNames();
 		PlayerTurn.greetUser();
 		PlayerTurn.askForTurn();
 		while (PlayerTurn.isWon)
@@ -15,5 +14,6 @@ public class GameRunner
 			Board.displayBoard();
 			score++;
 			}
+		ScoreBoard.addNames();
 		}
 	}

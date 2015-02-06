@@ -53,11 +53,11 @@ public class Board
 				System.out.println("  —————————————————");
 				System.out.println("A |" + board[0][0] + "|" + board[0][1] + "|" + " 3 " + "|" + board[0][3] + "|"  );
 				System.out.println("  --------|--------");
-				System.out.println("B |" + board[1][0] + "|" + " 3 " + "|" + board[1][2] + "|" + board[1][3] + "|" );
+				System.out.println("B |" + board[1][0] + "|" + " 3 " + "|" + board[1][2] + "|" + " 1 " + "|" );
 				System.out.println("  —————————————————");
 				System.out.println("C |" + " 2 " + "|" + board[2][1] + "|" + board[2][2] + "|" + board[2][3] + "|");
 				System.out.println("  --------|--------");
-				System.out.println("D |" + board[3][0] + "|" + board[3][1] + "|" + " 4 "+ "|" + " 1 " + "|");
+				System.out.println("D |" + board[3][0] + "|" + board[3][1] + "|" + " 4 "+ "|" + " 2 " + "|");
 				System.out.println("  —————————————————");
 				System.out.println();
 				break;
@@ -65,3 +65,26 @@ public class Board
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

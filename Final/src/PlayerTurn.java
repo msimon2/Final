@@ -6,11 +6,13 @@ public class PlayerTurn
 	static Scanner userInput = new Scanner(System.in);
 	static String spot;
 	static String number;
+	static String name;
 	public static void greetUser()
 		{
+		System.out.println();
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What is your name?");
-		String name = userInput.nextLine();
+		name = userInput.nextLine();
 		String[] array = {"You look lovely today, ", "What a nice shirt you've got on, ", "Looks like you've lost those last few pounds, ", 
 				"Now I know where your daughter got her dashing good looks, ", "Did you get a hair cut? It looks great, ", 
 				"You look great, as always, ", "Did you sleep last night? You look gross, "};
@@ -37,22 +39,12 @@ public class PlayerTurn
 				{
 				Board.board[0][0] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("a2"))
 			{
 			if (Board.board[0][1].equals("   "))
 				{
 				Board.board[0][1] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("a3"))
@@ -61,22 +53,12 @@ public class PlayerTurn
 				{
 				Board.board[0][2] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("a4"))
 			{
 			if (Board.board[0][3].equals("   "))
 				{
 				Board.board[0][3] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("b1"))
@@ -85,22 +67,12 @@ public class PlayerTurn
 				{
 				Board.board[1][0] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("b2"))
 			{
 			if (Board.board[1][1].equals("   "))
 				{
 				Board.board[1][1] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("b3"))
@@ -109,22 +81,12 @@ public class PlayerTurn
 				{
 				Board.board[1][2] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("b4"))
 			{
 			if (Board.board[1][3].equals("   "))
 				{
 				Board.board[1][3] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("c1"))
@@ -133,22 +95,12 @@ public class PlayerTurn
 				{
 				Board.board[2][0] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("c2"))
 			{
 			if (Board.board[2][1].equals("   "))
 				{
 				Board.board[2][1] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("c3"))
@@ -157,22 +109,12 @@ public class PlayerTurn
 				{
 				Board.board[2][2] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("c4"))
 			{
 			if (Board.board[2][3].equals("   "))
 				{
 				Board.board[2][3] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("d1"))
@@ -181,22 +123,12 @@ public class PlayerTurn
 				{
 				Board.board[3][0] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("d2"))
 			{
 			if (Board.board[3][1].equals("   "))
 				{
 				Board.board[3][1] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		if (spot.equals("d3"))
@@ -205,22 +137,12 @@ public class PlayerTurn
 				{
 				Board.board[3][2] = " " + number + " ";
 				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
-				}
 			}
 		if (spot.equals("d4"))
 			{
 			if (Board.board[3][3].equals("   "))
 				{
 				Board.board[3][3] = " " + number + " ";
-				}
-			else
-				{
-				System.out.println("you can't do that!");
-				assignTurn();
 				}
 			}
 		}

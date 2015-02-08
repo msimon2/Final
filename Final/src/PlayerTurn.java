@@ -2,7 +2,6 @@ import java.util.*;
 
 public class PlayerTurn
 	{
-	static boolean isWon = true;
 	static Scanner userInput = new Scanner(System.in);
 	static String spot;
 	static String number;

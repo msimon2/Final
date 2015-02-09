@@ -13,6 +13,8 @@ public class GameRunner
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
+			System.exit(0);
 			}
+		CheckForWinn.checkBoards();			
 		}
 	}

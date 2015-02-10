@@ -17,5 +17,6 @@ public class GameRunner
 			score++;
 			CheckForWinn.checkBoards();
 			}
+		ScoreBoard.addNames();
 		}
 	}

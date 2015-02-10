@@ -19,7 +19,7 @@ public class PlayerTurn
 		int randomCompliment = (int)(Math.random()*array.length);
 		System.out.println(array[randomCompliment] + name + "!");
 		}
-	public static void askForTurn()
+	public static void intruduceGame()
 		{
 		System.out.println();
 		System.out.println("Today you're playing Sudoku. The object of the game to fill each column, row, and box "
@@ -27,12 +27,15 @@ public class PlayerTurn
 		System.out.println("You can only have one of each number in each column, row, and box. Good luck!");
 		System.out.println();
 		}
-	public static void assignTurn()
+	public static void askUser()
 		{
 		System.out.println("Go ahead and put in the spot you'd like to fill.");
 		spot = userInput.nextLine();
 		System.out.println("Now put in the number you'd like in that spot.");
 		number = userInput.nextLine();
+		}
+	public static void assignTurn()
+		{
 		if (spot.equals("a1"))
 			{
 			if (Board.board[0][0].equals("   "))

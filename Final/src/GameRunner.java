@@ -7,13 +7,15 @@ public class GameRunner
 		Board.makeBoard();
 		Board.displayBoard();
 		PlayerTurn.greetUser();
-		PlayerTurn.askForTurn();
+		PlayerTurn.intruduceGame();
 		while (PlayerTurn.isWon)
 			{
+			PlayerTurn.askUser();
+			CheckForWinn.protectComputer();
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
+			CheckForWinn.checkBoards();
 			}
-		CheckForWinn.checkBoards();			
 		}
 	}

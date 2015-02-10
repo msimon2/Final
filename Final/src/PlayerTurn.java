@@ -2,6 +2,7 @@ import java.util.*;
 
 public class PlayerTurn
 	{
+	static boolean isWon = true;
 	static Scanner userInput = new Scanner(System.in);
 	static String spot;
 	static String number;
@@ -12,7 +13,7 @@ public class PlayerTurn
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What is your name?");
 		name = userInput.nextLine();
-		String[] array = {"You look lovely today, ", "What a nice shirt you've got on, ", "I love you did your hair, ", 
+		String[] array = {"You look lovely today, ", "What a nice shirt you've got on, ", "I love what you did with your hair, ", 
 				"Now I know where your daughter got her dashing good looks, ", "Did you get a hair cut? It looks great, ", 
 				"You look great, as always, ", "Wow, you look amazing today, "};
 		int randomCompliment = (int)(Math.random()*array.length);
@@ -600,4 +601,5 @@ public class PlayerTurn
 				}
 			}
 		}
+
 	}

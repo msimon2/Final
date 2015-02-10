@@ -8,12 +8,11 @@ public class GameRunner
 		Board.displayBoard();
 		PlayerTurn.greetUser();
 		PlayerTurn.askForTurn();
-		while (CheckForWinn.isWon)
+		while (PlayerTurn.isWon)
 			{
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
-			System.exit(0);
 			}
 		CheckForWinn.checkBoards();			
 		}

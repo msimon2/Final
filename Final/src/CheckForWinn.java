@@ -1,7 +1,6 @@
 
 public class CheckForWinn 
 	{
-	static boolean isWon = true;
 	static boolean validity;
 	public static void checkBoards()
 		{	

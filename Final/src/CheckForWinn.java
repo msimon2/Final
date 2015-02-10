@@ -18,10 +18,8 @@ public class CheckForWinn
 		}
 	public static void protectComputer()
 		{
-			System.out.println("eeter");
 		if (Board.board[0][0].equals(" 5 ") && Board.board[0][1].equals(" 3 ") && Board.board[0][4].equals(" 7 "))
 			{
-			System.out.println("hi");
 			if (PlayerTurn.spot.equals("a1") || PlayerTurn.spot.equals("a2") || PlayerTurn.spot.equals("a5") || PlayerTurn.spot.equals("b1") 
 				|| PlayerTurn.spot.equals("b4") || PlayerTurn.spot.equals("b5") || PlayerTurn.spot.equals("b6") || PlayerTurn.spot.equals("c2")
 				|| PlayerTurn.spot.equals("c3") || PlayerTurn.spot.equals("c8") || PlayerTurn.spot.equals("d8") || PlayerTurn.spot.equals("d8")
@@ -32,19 +30,17 @@ public class CheckForWinn
 				|| PlayerTurn.spot.equals("i8") || PlayerTurn.spot.equals("i9"))
 					{
 					System.out.println("That's a computer generated number, you can't change that.");
-					PlayerTurn.assignTurn();
 					}
 			}
 		if (Board.board[2][1].equals(" 7 ") && Board.board[2][2].equals(" 4 ") && Board.board[2][4].equals(" 8 "))
 			{
-			if (PlayerTurn.spot.equals("a2") || PlayerTurn.spot.equals("b4") || PlayerTurn.spot.equals("b9") || PlayerTurn.spot.equals("c2")
-				|| PlayerTurn.spot.equals("c3") || PlayerTurn.spot.equals("c5") || PlayerTurn.spot.equals("d6") || PlayerTurn.spot.equals("d9")
-				|| PlayerTurn.spot.equals("e2") || PlayerTurn.spot.equals("e5") || PlayerTurn.spot.equals("e8") || PlayerTurn.spot.equals("f1")
-				|| PlayerTurn.spot.equals("f5") || PlayerTurn.spot.equals("g5") || PlayerTurn.spot.equals("g7") || PlayerTurn.spot.equals("g8")
-				|| PlayerTurn.spot.equals("h1") || PlayerTurn.spot.equals("h6") || PlayerTurn.spot.equals("i8"))
+			if (PlayerTurn.spot.equals("a2") || PlayerTurn.spot.equals("a5") || PlayerTurn.spot.equals("b4") || PlayerTurn.spot.equals("b9") 
+				|| PlayerTurn.spot.equals("c2") || PlayerTurn.spot.equals("c3") || PlayerTurn.spot.equals("c5") || PlayerTurn.spot.equals("d6") 
+				|| PlayerTurn.spot.equals("d9") || PlayerTurn.spot.equals("e2") || PlayerTurn.spot.equals("e5") || PlayerTurn.spot.equals("e8")
+				|| PlayerTurn.spot.equals("f1") || PlayerTurn.spot.equals("f5") || PlayerTurn.spot.equals("g5") || PlayerTurn.spot.equals("g7") 
+				|| PlayerTurn.spot.equals("g8") || PlayerTurn.spot.equals("h1") || PlayerTurn.spot.equals("h6") || PlayerTurn.spot.equals("i8"))
 					{
 					System.out.println("That's a computer generated number, you can't change that.");
-					PlayerTurn.assignTurn();
 					}
 			}
 		if (Board.board[0][1].equals(" 9 ") && Board.board[0][3].equals(" 5 ") && Board.board[0][4].equals(" 6 ") && Board.board[0][8].equals(" 7 ") )
@@ -59,7 +55,6 @@ public class CheckForWinn
 				|| PlayerTurn.spot.equals("i5") || PlayerTurn.spot.equals("i8"))
 					{
 					System.out.println("That's a computer generated number, you can't change that.");
-					PlayerTurn.assignTurn();
 					}
 				}
 			}

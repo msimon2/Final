@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class GameRunner
 	{
@@ -16,7 +15,7 @@ public class GameRunner
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
-			//CheckForWinn.checkBoards();
+			CheckForWinn.checkBoards();
 			}
 		ScoreBoard.addNames();
 		}

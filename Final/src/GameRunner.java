@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class GameRunner
 	{
@@ -15,7 +16,14 @@ public class GameRunner
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
-			CheckForWinn.checkBoards();
+			Scanner userInput = new Scanner(System.in);
+			System.out.println("Are you finished?");
+			String answer = userInput.nextLine();
+			if (answer.equals("yes"))
+				{
+				CheckForWinn.checkBoards();
+				}
+			
 			}
 		ScoreBoard.addNames();
 		}

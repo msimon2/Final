@@ -13,6 +13,10 @@ public class CheckForWinn
 					validity=true;
 					System.out.println("There seems to be some mistakes.");
 					}
+				else
+					{
+					System.exit(0);	
+					}
 				}
 			}
 		}

@@ -16,14 +16,7 @@ public class GameRunner
 			PlayerTurn.assignTurn();
 			Board.displayBoard();
 			score++;
-			Scanner userInput = new Scanner(System.in);
-			System.out.println("Are you finished?");
-			String answer = userInput.nextLine();
-			if (answer.equals("yes"))
-				{
-				CheckForWinn.checkBoards();
-				}
-			
+			//CheckForWinn.checkBoards();
 			}
 		ScoreBoard.addNames();
 		}
